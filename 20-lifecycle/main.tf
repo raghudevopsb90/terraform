@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 variable "ami" {
-  default = "ami-0220d79f3f480ecf5"
+  default = "ami-0eec78ea4cbaaf5bd"
 }
 
 # Change var.ami and apply: the new instance comes up before the old one is deleted
@@ -27,7 +27,7 @@ resource "aws_instance" "main1" {
 }
 
 variable "ami1" {
-  default = "ami-0220d79f3f480ecf5"
+  default = "ami-0eec78ea4cbaaf5bd"
 }
 
 # Change var.ami1 and apply: terraform shows no changes for this instance

@@ -63,8 +63,8 @@ variable "availability_zones" {
 variable "image_ids" {
   type = map(string)
   default = {
-    dev  = "ami-0220d79f3f480ecf5"
-    prod = "ami-0220d79f3f480ecf5"
+    dev  = "ami-0eec78ea4cbaaf5bd"
+    prod = "ami-0eec78ea4cbaaf5bd"
   }
 }
 

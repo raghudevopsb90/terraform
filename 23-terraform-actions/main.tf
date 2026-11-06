@@ -39,7 +39,7 @@ resource "aws_instance" "main" {
 }
 
 variable "ami" {
-  default = "ami-0220d79f3f480ecf5"
+  default = "ami-0eec78ea4cbaaf5bd"
 }
 
 ## An action can also be run on demand:

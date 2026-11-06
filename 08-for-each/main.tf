@@ -32,7 +32,7 @@ variable "components" {
 
 resource "aws_instance" "main" {
   for_each      = var.components
-  ami           = "ami-0220d79f3f480ecf5"
+  ami           = "ami-0eec78ea4cbaaf5bd"
   instance_type = each.value["instance_type"]
 
   tags = {

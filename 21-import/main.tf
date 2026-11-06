@@ -18,7 +18,7 @@ variable "instance_id" {
 }
 
 resource "aws_instance" "workstation" {
-  ami           = "ami-0220d79f3f480ecf5"
+  ami           = "ami-0eec78ea4cbaaf5bd"
   instance_type = "t3.small"
 
   tags = {

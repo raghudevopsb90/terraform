@@ -6,7 +6,7 @@ provider "aws" {
 # Conditions pick a value. They do not decide whether a resource runs.
 
 resource "aws_instance" "main" {
-  ami           = "ami-0220d79f3f480ecf5"
+  ami           = "ami-0eec78ea4cbaaf5bd"
   instance_type = var.env == "prod" ? "t3.medium" : "t3.small"
 }
 
@@ -22,7 +22,7 @@ variable "create_ec2" {
 
 resource "aws_instance" "optional" {
   count         = var.create_ec2 ? 1 : 0
-  ami           = "ami-0220d79f3f480ecf5"
+  ami           = "ami-0eec78ea4cbaaf5bd"
   instance_type = "t3.micro"
 }
 

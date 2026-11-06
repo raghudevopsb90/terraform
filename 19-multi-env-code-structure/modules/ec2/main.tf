@@ -6,7 +6,7 @@ data "aws_security_group" "selected" {
 }
 
 resource "aws_instance" "instance" {
-  ami                    = "ami-0220d79f3f480ecf5"
+  ami                    = "ami-0eec78ea4cbaaf5bd"
   instance_type          = var.env == "prod" ? "t3.medium" : "t3.small"
   vpc_security_group_ids = [data.aws_security_group.selected.id]
 
