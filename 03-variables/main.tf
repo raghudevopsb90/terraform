@@ -30,6 +30,8 @@ output "x1" {
   value = "x is ${var.x}"
 }
 
+# In list, In terraform , index starts from zero
+
 output "example1" {
   value = var.example1[2]
 }
