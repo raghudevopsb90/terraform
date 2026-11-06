@@ -7,7 +7,7 @@ resource "null_resource" "test" {
 }
 
 variable "components" {
-  default = ["frontend", "mongodb", "catalogue"]
+  default = ["frontend", "catalogue"]
 }
 
 resource "aws_instance" "main" {
