@@ -5,7 +5,6 @@ provider "aws" {
 resource "aws_instance" "test" {
   ami                    = "ami-0eec78ea4cbaaf5bd"
   instance_type          = "t3.small"
-  vpc_security_group_ids = ["sg-09b871cf63e2bb80b"]
 
   # Runs on the machine where terraform runs
   provisioner "local-exec" {
