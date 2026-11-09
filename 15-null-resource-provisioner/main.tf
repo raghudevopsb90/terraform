@@ -12,10 +12,10 @@ resource "aws_instance" "test" {
 # Moving them to a null_resource lets us re-run them using triggers.
 resource "null_resource" "test" {
 
-  # triggers = {
-  #   instance = aws_instance.test.id # re-run when the instance is replaced
-  #   # always = timestamp()          # re-run on every apply
-  # }
+  triggers = {
+    instance = aws_instance.test.id # re-run when the instance is replaced
+    # always = timestamp()          # re-run on every apply
+  }
 
   provisioner "remote-exec" {
     connection {
