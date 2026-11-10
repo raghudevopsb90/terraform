@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 variable "ami" {
-  default = "ami-0eec78ea4cbaaf5bd"
+  default = "ami-0055977a6e828a4f4"
 }
 
 # Change var.ami and apply: the new instance comes up before the old one is deleted
