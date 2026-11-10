@@ -32,7 +32,7 @@ variable "ami1" {
 
 # Change var.ami1 and apply: terraform shows no changes for this instance
 resource "aws_instance" "main2" {
-  ami           = var.ami1
+  ami           = var.ami
   instance_type = "t3.small"
 
   lifecycle {
