@@ -9,7 +9,7 @@ plan: init
 	terraform plan -var-file=env-$(env)/main.tfvars
 
 apply: init
-	terraform apply -auto-approve -var-file=env-$(env)/main.tfvars
+	terraform apply -auto-approve
 
 destroy: init
-	terraform destroy -auto-approve -var-file=env-$(env)/main.tfvars
+	terraform destroy -auto-approve
