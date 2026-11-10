@@ -18,7 +18,7 @@ resource "aws_instance" "main" {
 
 # terraform destroy fails while this is set
 resource "aws_instance" "main1" {
-  ami           = var.ami
+  ami           = var.ami1
   instance_type = "t3.small"
 
   lifecycle {
